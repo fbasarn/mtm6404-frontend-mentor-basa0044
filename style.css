@@ -182,11 +182,27 @@ p{
         display: none;
     }
 
+    .dropdown-content2{
+        display: none;
+    }
+
     .cross-icon{
         display: none;
     }
 
-    .arrow-up{
+    .arrow-up1{
+        display: none;
+    }
+
+    .arrow-up2{
+        display: none;
+    }
+
+    .display{
+        display: contents;
+    }
+
+    .non-display{
         display: none;
     }
 
@@ -201,6 +217,12 @@ p{
 
     .hamburger-icon{
         display: none;
+    }
+
+    /* DROPDOWN ACTIVE */
+
+    .active{
+        display: contents;
     }
 
     /* BODY */
