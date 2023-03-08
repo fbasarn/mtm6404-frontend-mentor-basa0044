@@ -53,7 +53,7 @@ table {
 
 /* ROOT */
 
-html{
+.container{
     max-width: 1440px;
     margin: 0 auto;
     font-family: 'Epilogue', sans-serif;;
@@ -61,6 +61,7 @@ html{
 
 p{
     font-size: 18px;
+    line-height: 30px;
 }
 
 h1{
@@ -84,13 +85,6 @@ nav ul{
 
 /* BODY */
 
-.content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 0px 30px 0px 30px;
-}
-
 img{
     width: 100vw;
 }
@@ -99,19 +93,30 @@ h1{
     margin: 20px 0px 20px 0px;
 }
 
+h1 > div{
+    display: inline;
+}
+
 p{
     text-align: center;
     color: hsl(0, 0%, 41%);
 }
 
-.content button{
+.text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text button{
     padding: 15px 25px 15px 25px;
     margin: 20px 0px 20px 0px;
     background-color: black;
     border-radius: 10px;
+    width: 200px;
 }
 
-.content button > a{
+.content button a{
     color: white;
     text-decoration: none;
     font-size: 1rem;
@@ -124,7 +129,7 @@ p{
     margin-top: 30px;
 }
 
-@media screen and (min-width: 700px){
+@media screen and (min-width: 900px){
 
     /* NAV */
     
@@ -149,6 +154,49 @@ p{
     }
 
     /* BODY */
+
+    .content{
+        display: grid;
+        margin: 0px 80px 0px 80px;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        max-height: 80vh;
+    }
+
+    .hero-img{
+        order: 1;
+        grid-column: 2 / span 3;
+    }
+
+    img{
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .text{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 4rem;
+        max-width: 450px;
+        margin-bottom: 50px;
+    }
+
+    p{
+        text-align: left;
+        max-width: 450px;
+        margin-bottom: 50px;
+    }
+
+    .clients{
+        display: flex;
+        max-width: 450px;
+        grid-column: 1 / span ;
+        justify-content: space-between;
+    }
 
 
 }
