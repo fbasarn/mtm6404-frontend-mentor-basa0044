@@ -158,16 +158,19 @@ p{
         margin-left: auto;
     }
 
+    .nav-2 li:nth-child(1){
+        margin: auto;
+    }
+
     .nav-2 li:nth-child(2){
         border: 1px solid black ;
         padding: 10px 20px 10px 20px;
-        margin-left: 20px;
+        margin-left: 30px;
         border-radius: 10px;
     }
 
     li{
         font-size: 18px;
-        margin: auto;
     }
 
     li a{
