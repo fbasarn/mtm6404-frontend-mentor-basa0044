@@ -150,6 +150,11 @@ p{
         margin-left: 50px;
     }
 
+    .nav-1 li{
+        display: flex;
+        align-items: center;
+    }
+
     li{
         margin-left: 30px;
     }
@@ -179,6 +184,7 @@ p{
     }
 
     .dropdown-content{
+        flex-direction: column;
         display: none;
     }
 
@@ -198,14 +204,6 @@ p{
         display: none;
     }
 
-    .display{
-        display: contents;
-    }
-
-    .non-display{
-        display: none;
-    }
-
 
     .dropbtn{
         border: none;
@@ -217,12 +215,6 @@ p{
 
     .hamburger-icon{
         display: none;
-    }
-
-    /* DROPDOWN ACTIVE */
-
-    .active{
-        display: contents;
     }
 
     /* BODY */
