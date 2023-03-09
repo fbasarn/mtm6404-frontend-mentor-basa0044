@@ -9,7 +9,6 @@
     z-index: 1;
     margin: 0;
     background-color: white;
-    display: none;
   }
   header {
     margin-top: 30px;
@@ -51,6 +50,12 @@
   }
   .dropbtn {
     padding: 0;
+  }
+  img {
+    width: 100%;
+  }
+  .hide {
+    display: none;
   }
 }
 @media (min-width: 900px) {

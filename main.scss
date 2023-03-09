@@ -1,6 +1,7 @@
 // HAMBURGER MENU STYLING
 
 @media screen and (max-width:900px){
+
 nav{
     position: fixed;
     top: 0;
@@ -11,7 +12,6 @@ nav{
     z-index: 1;
     margin: 0;
     background-color: white;
-    display: none;
 }
 
 header{
@@ -61,6 +61,14 @@ header{
 
 .dropbtn{
     padding: 0;
+}
+
+img{
+    width: 100%;
+}
+
+.hide{
+    display: none;
 }
 
 }
